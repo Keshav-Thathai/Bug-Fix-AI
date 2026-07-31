@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFix AI</title>
+     
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Code Fix AI ⚡ 
+        <br>
+        By Keshav Thathai
+    </h1>
+
+    <p>AI-Powered Bug Detection & Code Analysis</p>
+
+    <form action="/analyze" method="POST">
+
+        <textarea
+            name="code"
+            placeholder="Paste your code here..."
+            rows="15"
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Analyze Code</button>
+
+    </form>
+
+{% if result %}
+
+<div class="result">
+
+<h2>Analysis Result</h2>
+
+<pre>{{ result }}</pre>
+
+</div>
+
+{% endif %}
+
+</div>
+</div>
+
+</body>
+</html>
