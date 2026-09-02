@@ -39,7 +39,8 @@ Code:
 """
 
     response=client.chat.completions.create(
-        model="Llama-3.3-70b-versatile",
+        model=model="llama-3.1-70b-versatile",
+
         messages=[
              {
                  "role":"user",
