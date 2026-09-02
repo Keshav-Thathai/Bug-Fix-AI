@@ -39,7 +39,7 @@ Code:
 """
 
     response=client.chat.completions.create(
-        model=model="llama-3.1-70b-versatile",
+          model=model="llama-3.1-70b-versatile",
 
         messages=[
              {
